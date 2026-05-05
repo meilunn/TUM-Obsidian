@@ -225,14 +225,190 @@ social media
 
 
 -> "unifying" class: leisure time oriented applications, services & platforms
-	->for this class: social context on various temporal scales play important role
+	-> for this class: social context on various temporal scales play important role
 	-> we will define social context and investigate the **role, applications and detection** of **social context** using the example of **Social Networking**
+
+![[Pasted image 20260505124029.png|362]]
 
 
 # Contextual Social Networking
 
+- paradigm in Social Computing
+
+- Users' main goal: 
+	- maintaining and expanding their social network via comm
+- users **explicate** and maintain **explicit model of social relations** (-> social network) and **user-item-relations** (likes, comments etc.)
+
+- users socially interact using **bundle of Social Media services** 
+- users have **personal information spaces**
+	- sets of items associated with users that they exert control over or whose relations (user-item) they exert control over
+- user has **personal profile** 
+	- publicly accessible sub-space of p.i.s: used as personal reference for introducing a person or used as ref point for SN services (e.g. awareness services)
+- **communication**: non-anon
+- content: mostly textual + photos + contextual; non-commercial; discrete transfer
+
+# Social Network
+
+Def (informal) Real World Social Network:
+-  set of humans together with all aspects of their social relations
+
+Initial def Social Network Model Framework
+- mathematical rep (modelling) language for modelling real world social networks (often a graph formalism)
+
+Initial def Social Network Model: **graph G=(V,E)**
+- **nodes V**: represent humans (actors)
+- (undirected) **edges E**: represent binary social relations (ties) $E \subseteq {V \choose 2}$
+
+Def Social Network
+- **instance** of Social Network Model
+
+> **Distinguish** between
+> Social networking 
+> Social networking platform
+> Social networking platform instance
+> Social network
 
 
+### slightly refined Social Network Model
+
+Graph $G=(V, E, P_{V}, P_{E}, f_{P_{V}}, f_{P_{E}})$
+
+- **Nodes** $V=\uplus V_{i}$ 
+	- humans (actors) of diff sorts (-> modes) $V_{i}$
+- **Edges** $E \subseteq V \times V$; $E = \uplus E_{i}$
+	- directed binary social relations (ties) of diff sorts $E_{i}$
+- $P_{V}$: Set of **Node Profiles**
+- $P_{E}$: Set of **Edge Profiles**
+- $f_{P_{V}}: V\to P_{V}$
+- $f_{P_{E}}:V\to P_{E}$
+
+![[Pasted image 20260505124049.png|277]]
+
+#### Social ties
+
+Edge profiles - types of social relations (examples)
+- friendship, kinshin, professional realtions, ...
+-> large **ontologial fredom**, often hard to define precise semantics for edges
+
+Alternative characterisation: use multiple axes (intensity, valence, hierarchity, ...)
 
 
+# Social Networking Services
 
+
+Awareness / contextual
+- services for personal **social network management** (adding friends etc)
+- **awareness** services on **social network** (network analysis, alerts etc)
+- services for **privacy** management
+- for **group** management
+- for **ratings**, comments
+
+Direct communication
+- synchronous + asynchronous, threaded + non-threaded, 1:1, 1:n, n:m, ...
+- e.g. chat, messaging
+
+Information
+- personal **blogs** + microblogs
+- bulletin **boards** (e.g. Facebook Chronic)
+
+# Mobile social networking + Context
+
+Distinction SN <-> MSN
+- MSN is a **form of SN** with **mobile UI** AND **acquisition** and **use of contexts** induced by the mobile interaction scenario (deep embedding into all day life) via **sensors** conceptually connected to the mobile usage scenario (e.g. part of the mobile device)
+
+Context
+- *where* you are, who *you* are with, and *what* resources are nearby -> more than just the user's location
+- any information that can be used to characterise the **situation** of an **entity**
+	- entity is a person, place or obj that is considered *relevant to the interaction* between a user and an application, including the user and applications themselves
+
+Context Awareness
+- A sys is context-aware if it **uses context** to provide **relevant** info and/or services to the user, where relevancy depends on the user's **task**
+- Context is an **operational term**
+	- something is context bec of the way it is used in interpretation, not due to its inherent properties
+
+Context classes
+- Computing, user, physical, temporal
+- identity, location, status
+
+Active / Passice Context Awareness
+
+higher lvl / lower lvl context
+
+Dynamics
+- context : rapid changes
+- personalization info: slower changes
+
+Temporal distinction
+- long, medium, short term
+
+## Context classes for Contextual Social Networking (CSN)
+
+Physical Context
+- at user's spatiotemporal location
+- independent of user: lighting, temperature etc
+- also computing context:
+	- at user's spatiotemporal location
+	- independent of user: available bandwidth etc
+
+Individual Context of user
+- location, speed, disabilities, personal physiological params etc
+- computing context 
+	- involving nature of the device(s)
+	- state of applications running, precise state of interaction of user with device or app
+
+Social Context
+- refers to characterizing the **social nature of the situation** a user if currently in
+- *models* of any aspects of *social interaction* having a relation to *IT systems*
+- short term
+	- low level: e.g. set of ids of people in Bluetooth range
+	- higher level: e.g. social situations
+- long term
+	- low lvl: e.g. friendships in Facebook
+	- higher lvl: e.g. dense Social Network groups the user is part of
+
+
+#### Facets of social context
+![[Pasted image 20260505122644.png|522]]
+
+#### Context classes for SN (Applications)
+
+- collaborative filtering: dampen ratings if not given in ,atching context
+- awareness: social + location
+- privacy settings
+- social lifelogging
+- etc
+
+
+# Decentralised social networking + social semantic web
+
+## Data-Silo Problem
+
+Solutions
+- API-based: e.g. Google open social
+- decentralised social networking
+	- P2P SN
+	- Social sementic web
+
+![[Pasted image 20260505123507.png|536]]
+
+
+# Social Computing
+
+Two main directions
+- Mining "Big Data" from social media
+	- crawl large datasets, analyse them with statistical methods (data-mining) and / or model them with machine learning models (-> usage)
+- Construct games and social media making intelligent use of social contexts on various levels of abstractions / on various temporal levels
+
+# Questions
+
+- Define “Social Media Service” and “Social Media Platform”!
+- Can CSCW software and the collaboration oriented Social Media classes be considered Social Media software / Social Media? Briefly discuss!
+- Characterization of Social Media services in terms of the supported forms of communication: Name and define four different characteristics (axes)!
+- Social Semantic Web: What is the nature and function of OWL, SIOC and OPO?
+- What are reasonable classes of Context in Social Networking and Mobile Social Networking? Briefly explain!
+- Social Networks: What information can be modeled in edge profiles?
+- What are main differences between Blogs and Microblogs?
+- Define “Social Game”!
+- Name and briefly explain three common aspects of Social Games and Social Media!
+- Name and briefly explain three characteristics of Social Networking!
+- Define Mobile Social Networking!
